@@ -1,5 +1,5 @@
 <?php
-function IP-ku() {
+function IP() {
     $ipaddress = '';
     if (getenv('HTTP_CLIENT_IP'))
         $ipaddress = getenv('HTTP_CLIENT_IP');
@@ -79,14 +79,14 @@ if ($user_ip == " ") {
             padding: 10px;
         }
         th {
-            background-color: black;
-            color: white;
+            background-color: pink;
+            color: blue;
         }
         tr:nth-child(even) {
-            background-color: red;
+            background-color: blue;
         }
 		tr:ntd-child(even) {
-            background-color: blue;
+            background-color: red;
         }
         h1 {
             margin-bottom: 5;
@@ -107,7 +107,7 @@ if ($user_ip == " ") {
         <tr>
             <td><b>NAMA</b></td>
             <td>:</td>
-            <td>Donni Dwi Nurwiguna
+            <td>DONNY DWI NURWIGUNA
         </tr>
         <tr>
             <td><b>KELAS</b></td>
@@ -127,7 +127,7 @@ if ($user_ip == " ") {
         <tr>
             <td><b>IP</b></td>
             <td>:</td>
-            <td><?php echo IP-ku() ;?></td>
+            <td><?php echo IP() ;?></td>
         </tr>
         <tr>
             <td><b>NEGARA</b></td>
